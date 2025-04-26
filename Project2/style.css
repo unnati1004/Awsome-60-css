@@ -1,0 +1,29 @@
+body{
+     margin: 0;
+     padding: 0;
+     background-color: #262626;
+}
+span{
+  width: 350px;
+  height:90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;   
+  transform: translate(-50%,-50%);
+  border:5px solid grey; 
+  text-align: center;
+  font-size: 60px;
+  line-height: 90px;
+  color: grey;
+  border-radius: 90px;  
+  text-transform: uppercase;
+  transition: box-shadow 0.5s, color 0.5s, border-color 0.5s;   
+}
+input{
+  -webkit-appearance: none;
+}
+input:checked + span {
+     box-shadow: 0 0 40px rgba(46, 146, 213, 1); 
+     color: #2e92d5;
+     border-color: #2e92d5;
+   }
