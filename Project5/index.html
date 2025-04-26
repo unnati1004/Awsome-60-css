@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Half Star Rating</title>
+  <style>
+    .stars {
+      display: inline-block;
+      font-size: 2rem;
+      color: #FFD700;
+      position: relative;
+    }
+    .stars::before {
+      content: "★★★★★";
+      letter-spacing: 3px;
+      background: linear-gradient(90deg, gold 50%, lightgray 50%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .stars::after {
+      content: "☆☆☆☆☆";
+      letter-spacing: 3px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: lightgray;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+
+<!-- This is a 2.5 star rating -->
+<div class="stars"></div>
+
+</body>
+</html>

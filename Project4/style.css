@@ -10,7 +10,6 @@ body{
   transform:translate(-50%,-50%);   
   display: flex;
   gap: 10px;
-  /* place-items: center;    */
 }
 .rating input{
   display: none;
@@ -22,29 +21,30 @@ body{
 }
 .rating label::before{
      display: block;
-     content: '\f006';   
+     content: '\f005';   
      position: relative;
-  font-family: 'Font Awesome 6 Free';
+  font-family: 'FontAwesome';
   font-size: 50px;
   color: #101010;
 }
 .rating label::after{
      display: block;
-     content: '\f006';   
+     content: '\f005';   
      position: absolute;
      top: 0;
-  font-family: 'Font Awesome 6 Free';
+  font-family: 'FontAwesome';
   font-size: 50px;
   color: #1f9cff;
   opacity: 0;
   text-shadow: 0 0 10px rgb(71, 68, 68);
   transition: 0.5s;
 }
-.rating label:hover::after{
+.rating label:hover::after,
+.rating label:hover ~ label::after,
+.rating label:hover ~ label:before
+{
      opacity: 1;
 }
-.rating label:hover::after,
-.rating label:hover ~ label:before,
 .rating input:checked ~ label:after{
-   opacity: 1;  
+  opacity: 1;  
 }
