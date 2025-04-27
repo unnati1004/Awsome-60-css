@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
-     <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div class="container">
-          <h2>Animation Css</h2>
-          <a href="./Project1/index.html" >Project 1</a>
-          <a href="./Project2/index.html" >Project 2</a>
-          <a href="./Project3/index.html" >Project 3</a>
-          <a href="./Project4/index.html" >Project 4</a>
-          <a href="./Project5/index.html" >Project 5</a>
-          <a href="./Project6/index.html" >Project 6</a>
-     </div>
+  <div class="container">
+    <h2>Animation Css</h2>
+    <div id="project-links" class="grid-container">
+      <!-- Links will be inserted here -->
+    </div>
+  </div>
+
+  <script type="module">
+    import { data } from './project.js';
+
+    const container = document.getElementById('project-links');
+
+    data.forEach(item => {
+      const a = document.createElement('a');
+      a.href = item.link;
+      a.textContent = item.label;
+      a.title = item.description;
+      a.className = "grid-item"; // Add class for styling
+      container.appendChild(a);
+    });
+  </script>
 </body>
 </html>
