@@ -44,6 +44,11 @@ export let data = [
       label: "Project 9",
       link: "./Project9/index.html",
       description: "Project9 checkbox"
+    },
+    {
+      label: "Project 10",
+      link: "./Project10/index.html",
+      description: "Project10 checkbox"
     }
    ];
    
