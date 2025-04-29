@@ -1,50 +1,68 @@
-body{
-  margin:0;
-  padding:0;   
+body {
+  margin: 0;
+  padding: 0;
   background-color: gray;
 }
-.rating{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);   
+.rating {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
+  flex-direction: row-reverse;
   gap: 10px;
 }
-.rating input{
+.rating input {
   display: none;
 }
-.rating label{
+.rating label {
   display: block;
-  cursor:pointer;
+  cursor: pointer;
   width: 50px;
 }
-.rating label::before{
-     display: block;
-     content: '\f005';   
-     position: relative;
-  font-family: 'FontAwesome';
+.rating label::before {
+  display: block;
+  content: "\f005";
+  position: relative;
+  font-family: "FontAwesome";
   font-size: 50px;
   color: #101010;
 }
-.rating label::after{
-     display: block;
-     content: '\f005';   
-     position: absolute;
-     top: 0;
-  font-family: 'FontAwesome';
+.rating label::after {
+  display: block;
+  content: "\f005";
+  position: absolute;
+  top: 0;
+  font-family: "FontAwesome";
   font-size: 50px;
   color: #1f9cff;
   opacity: 0;
   text-shadow: 0 0 10px rgb(71, 68, 68);
   transition: 0.5s;
 }
-.rating label:hover::after,
-.rating label:hover ~ label::after,
-.rating label:hover ~ label:before
-{
-     opacity: 1;
+/* Checked state: show glowing stars using ::after */
+.rating input:checked + label::after,
+.rating input:checked + label ~ label::after {
+  opacity: 1;
 }
-.rating input:checked ~ label:after{
-  opacity: 1;  
+/* Hover effect */
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #1f9cff;
+  text-shadow: 0 0 10px rgb(71, 68, 68);
+}
+/* Hover effect only with ::after */
+.rating label:hover::after,
+.rating label:hover ~ label::after {
+  opacity: 1;
+}
+/* Checked (clicked) effect */
+.rating input:checked ~ label {
+  color: #1f9cff; /* Reset first */
+}
+
+.rating input:checked + label,
+.rating input:checked + label ~ label {
+  color: #1f9cff;
+  text-shadow: 0 0 10px rgb(71, 68, 68);
 }

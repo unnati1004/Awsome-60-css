@@ -41,7 +41,6 @@ body {
   background: black;
   margin: 25px 10px;
   cursor: pointer;
-  /* gap:20px;   */
 }
 .box label input {
   display: none;
@@ -50,18 +49,14 @@ body {
   display: inline-block;
   border: 2px solid white;
   padding: 10px 15px;
-  /* margin: 10px; */
   border: 1px solid #444;
   border-radius: 4px;
   color: #444;
   background: black;
-  /* box-shadow: 0 0 10px white; */
-  /* gap: 100px;    */
 }
 .box label input:checked ~ span {
   color: white;
   border: 1px solid #008eff;
-  /* box-shadow: 0 0 10px green;    */
 }
 .box label input:checked ~ span:before {
   content: "";
