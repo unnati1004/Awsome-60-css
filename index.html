@@ -16,15 +16,28 @@
 
   <script type="module">
     import { data } from './project.js';
-
+  
     const container = document.getElementById('project-links');
-
+  
     data.forEach(item => {
       const a = document.createElement('a');
+      const img = document.createElement('img');
+      const span = document.createElement('span');
+
       a.href = item.link;
-      a.textContent = item.label;
       a.title = item.description;
-      a.className = "grid-item"; // Add class for styling
+      a.className = "grid-item";
+  
+      img.src = item.image;  // ✅ Set image source
+      img.alt = item.label;  // ✅ Accessibility
+      img.style.width = "100%"; // Optional styling
+
+      span.textContent = item.label;
+      span.className = "project-label";
+
+      a.appendChild(img);         // ✅ Add image inside link
+      a.appendChild(span);
+
       container.appendChild(a);
     });
   </script>
