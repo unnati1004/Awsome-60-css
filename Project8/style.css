@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.check {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: black; */
+  width: 250px;
+  height: 100px;
+  background: linear-gradient(0deg, #d8d8d8, #cccccc);
+  /* background-color: black; */
+  /* box-shadow:  0 0 0 50px white,0 0 0 50px white,0 0 0 50px white; */
+  border-top: 0.2em solid white;
+  border-bottom: 0.2em solid white;
+  border-radius: 150px;
+}
+.check .inner {
+  position: absolute;
+  top:10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  /* z-index: 1; */
+  background: linear-gradient(0deg, #a5a5a5, #717171);
+  /* background-color: black; */
+  box-shadow: inset 0 0 5px rgba(0,0,0,.5);     
+  border-radius: 150px;
+}
+.check .inner .toggle{
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  /* right: 0; */
+  /* bottom: 23px; */
+  width: 90px;
+  height: 90px;
+  /* background-color: black;    */
+  background: linear-gradient(0deg, #ccc, #e4e4e4);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-top: 0.04em solid #ececec;
+  border-bottom: 0.04em solid white;
+  transition: .5s;
+}
+.check .inner .toggle::before{
+  content: 'OFF';
+  width:10px;
+  height: 10px;
+  position: absolute;
+  top: 15px;
+  left: 6px;
+  right: 4px;
+  bottom: 4px;
+  background: linear-gradient(0deg,#e4e4e4,#ccc);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  color: #a9a9a9;
+}
+.check .inner.active .toggle:before{
+  content: "ON";   
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 4px;
+  bottom: 4px;
+}
+.check .inner.active .toggle{
+     
+     left: 150px;   
+}
+.check .inner.active{
+     background: linear-gradient(0deg, rgb(89, 236, 121),rgb(123, 205, 141));    
+} 
