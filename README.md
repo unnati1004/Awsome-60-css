@@ -18,4 +18,57 @@ Each day brings a new concept, a new idea, and a new design — all written from
 ---
 
 ## 📁 Project Structure
+Awesome-60-CSS/ │ ├── Day-01/ │ ├── index.html │ └── style.css │ ├── Day-02/ │ ├── index.html │ └── style.css │ ... └── Day-60/ ├── index.html └── style.css
 
+Each folder contains the complete design for the day, fully built with only HTML and CSS.
+
+---
+
+## 🧩 What's Included?
+
+Over the course of 60 days, you'll find:
+
+- 🖼️ Creative Layouts  
+- 🎨 Buttons, Cards & UI Elements  
+- 💫 Pure CSS Animations  
+- 🌈 Gradients, Glassmorphism, Neumorphism  
+- 🧠 CSS Tricks & Best Practices  
+- 📱 Responsive Designs  
+
+---
+
+## 🚀 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Awesome-60-CSS.git
+   cd Awesome-60-CSS
+
+2. Navigate to any day’s folder and open index.html in your browser.
+
+📌 Progress Tracker
+
+Day	Design Name	Preview
+✅	Day 01	Live
+✅	Day 02	Live
+⏳	...	Coming soon...
+⏳	Day 60	Coming soon...
+Live preview links will be added as I progress.
+
+📷 Gallery (Coming Soon)
+A visual collection of all 60 CSS designs will be showcased here once the challenge is completed.
+
+🙌 Let's Connect
+Love CSS? Building something similar? Want to collaborate?
+
+Feel free to reach out:
+
+💼 LinkedIn
+
+🐦 Twitter
+
+🌐 Portfolio
+
+📄 License
+This project is licensed under the MIT License.
+Feel free to explore, use, and learn — but please give credit when appropriate!
