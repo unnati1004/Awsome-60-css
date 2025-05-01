@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="toggle"></div>
+    <div class="content">
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit?
+      </h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui numquam at
+        aspernatur, soluta aperiam laborum, molestias vitae possimus repellat
+        earum dignissimos culpa impedit temporibus atque ratione eligendi illum
+        vero ullam! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Dignissimos ad, obcaecati dolores dicta velit corporis rem quo debitis
+        hic, tempora eveniet iure, et expedita! Voluptate deserunt reprehenderit
+        corrupti magnam quas.
+      </p><br>
+      <h2>Why do we use it?</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium beatae consequatur officia dicta quibusdam ab. Obcaecati accusantium iusto neque nostrum exercitationem earum nihil, suscipit vel asperiores possimus. Quos, quisquam autem.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel adipisci doloribus reprehenderit dignissimos assumenda omnis, distinctio ut animi quod! Est, maxime! Animi consectetur qui nulla, eos atque ut reiciendis maxime.    
+      </p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".toggle").click(function () {
+          $(".toggle").toggleClass("active");
+          $(".content").toggleClass("active")
+          $("body").toggleClass("night");
+        });
+      });
+    </script>
+  </body>
+</html>

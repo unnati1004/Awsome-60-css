@@ -59,6 +59,12 @@ export let data = [
       link: "./Project10/index.html",
       description: "Project10 checkbox",
        image: "images/project10.png"
+    },
+    {
+      label: "Project 11",
+      link: "./Project11/index.html",
+      description: "Project11 checkbox",
+       image: "images/project11.png"
     }
    ];
    
