@@ -38,7 +38,7 @@ body {
    }
 
    .project-image {
-    width: 100%;
+    width: auto;
     height: 120px;
     border: 2px solid red;
     object-fit: cover;
