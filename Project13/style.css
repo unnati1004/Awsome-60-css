@@ -1,0 +1,41 @@
+body{
+  margin: 0;
+  padding: 0;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #060606; */
+  height: 100vh;
+  font-family: sans-serif;
+  /* background-color: rgb(30, 28, 40); */
+}
+ul{
+     position: relative;
+     margin: 0;
+     padding: 0;
+     display: flex;
+}
+ul li {
+     position: relative;
+     list-style: none; 
+     width: 100px;
+     text-align: center;
+}
+ul li label{
+   position: relative;  
+}
+
+ul li label i,
+ul li label input[type="checkbox"]{
+     display: block;
+     text-align: center;
+}
+
+ul li label i{
+  font-size: 30px;
+  color: #222;
+}
+
+ul li label span{
+     
+}
