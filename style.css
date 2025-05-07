@@ -13,7 +13,7 @@ body {
    
    .grid-container {
      display: grid;
-     grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+     grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
      /* column-gap:  40px; */
      gap: 40px;
      justify-items: center;
@@ -39,9 +39,9 @@ body {
 
    .project-image {
     width: auto;
-    height: 120px;
-    border: 2px solid red;
-    object-fit: cover;
+    height: 240px;
+    /* border: 2px solid red; */
+    object-fit: fill;
     border-radius: 5px;
   }
   

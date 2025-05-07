@@ -65,6 +65,30 @@ export let data = [
       link: "./Project11/index.html",
       description: "Project11 checkbox",
        image: "images/project11.png"
+    },
+    {
+      label: "Project 12",
+      link: "./Project12/index.html",
+      description: "Project12 checkbox",
+       image: "images/project12.png"
+    },
+    // {
+    //   label: "Project 13",
+    //   link: "./Project11/index.html",
+    //   description: "Project11 checkbox",
+    //    image: "images/project11.png"
+    // },
+    {
+      label: "Project 14",
+      link: "./Project14/index.html",
+      description: "Project14 checkbox",
+       image: "images/project14.png"
+    },
+    {
+      label: "Project 15",
+      link: "./Project15/index.html",
+      description: "Project15 checkbox",
+       image: "images/project15.png"
     }
    ];
    
