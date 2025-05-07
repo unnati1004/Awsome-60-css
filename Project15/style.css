@@ -36,6 +36,7 @@ ul li span.list{
  display: inline-block;
  padding: 0 5px;
  transition: 0.5s;   
+ overflow: hidden;
 }
  input[type=checkbox]:checked ~ span.list{
   color: grey;
@@ -68,10 +69,8 @@ ul li span.list::after{
      transition: 0.5s;
      transition-delay: 0s;  
    }
-  ul li input[type=checkbox]:checked ~ span.list::after{
+  ul li input[type="checkbox"]:checked ~ span.list::after{
      transform: scaleX(1);
-     /* transition-delay: 0s; */
-     /* left:100% */
    }
 
 ul li span.icon{
@@ -79,9 +78,20 @@ ul li span.icon{
      top: 0;
      width: 18px;
      height: 18px;
-     /* background-color: #222; */
      box-sizing: border-box;
      border: 1px solid black;
      display: inline-block;
      margin-right: 5px;
+     overflow: hidden;
+}
+ul li span.icon:before{
+     content: "x";
+     position: absolute;
+     top:15px;
+     left: 4px;
+     transform: translateY(0);
+     transition: .5s;
+}
+ul li input[type="checkbox"]:checked ~ span.icon:before{
+     transform: translateY(-100%);
 }
